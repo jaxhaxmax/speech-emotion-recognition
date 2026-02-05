@@ -3,3 +3,15 @@ data/
 Dataset/
 *.wav
 *.mp3
+
+# Models
+models/
+*.h5
+*.pt
+
+# Logs
+logs/
+
+# Python
+__pycache__/
+.ipynb_checkpoints/
