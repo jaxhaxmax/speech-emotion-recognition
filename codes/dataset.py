@@ -5,7 +5,7 @@ from features import extract_mfcc_fixed
 
 
 # 🔹 CHANGE THIS PATH if your dataset is elsewhere
-DATASET_DIR = r"C:\Users\tanma\OneDrive\Desktop\speech-emotion-recognition\data\ravdess"
+DATASET_DIR = r"C:\Users\tanma\OneDrive\Desktop\speech-emotion-recognition\Dataset"
 
 # Emotion mapping for RAVDESS
 EMOTION_MAP = {
@@ -53,4 +53,8 @@ if __name__ == "__main__":
     print("y shape:", y.shape)
 
     # sanity check
-    print("First label:", y[0])
+    print("First label:", y)
+from collections import Counter
+
+print("Class distribution:")
+print(Counter(y))
